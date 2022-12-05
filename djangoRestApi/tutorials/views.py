@@ -4,6 +4,9 @@ from rest_framework.response import Response
 from rest_framework.mixins import UpdateModelMixin, DestroyModelMixin
 from .models import Tutorial
 from .serializers import TutorialSerializer
+import logging
+
+logger = logging.getLogger("django")
 
 # Create your views here.
 class TutorialView(APIView):
