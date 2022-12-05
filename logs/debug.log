@@ -59,3 +59,12 @@ ERROR 2022-12-05 14:14:30,409 basehttp "GET /api/tutorials HTTP/1.1" 500 162963
 INFO 2022-12-05 14:14:52,883 basehttp "GET /api/tutorials HTTP/1.1" 200 6157
 INFO 2022-12-05 14:14:56,375 basehttp "GET /api/tutorials HTTP/1.1" 200 6157
 INFO 2022-12-05 14:14:57,533 basehttp "GET /api/tutorials HTTP/1.1" 200 6157
+INFO 2022-12-05 14:16:54,822 autoreload Watching for file changes with StatReloader
+INFO 2022-12-05 14:16:55,524 basehttp "GET /api/tutorials HTTP/1.1" 200 6157
+INFO 2022-12-05 14:16:56,370 basehttp "GET /api/tutorials HTTP/1.1" 200 6157
+INFO 2022-12-05 14:17:09,345 basehttp "GET /api/tutorials HTTP/1.1" 200 6157
+INFO 2022-12-05 14:17:10,078 basehttp "GET /api/tutorials HTTP/1.1" 200 6157
+INFO 2022-12-05 14:17:10,952 basehttp "GET /api/tutorials HTTP/1.1" 200 6157
+INFO 2022-12-05 14:17:11,583 basehttp "GET /api/tutorials HTTP/1.1" 200 6157
+INFO 2022-12-05 14:17:12,218 basehttp "GET /api/tutorials HTTP/1.1" 200 6157
+INFO 2022-12-05 14:17:12,777 basehttp "GET /api/tutorials HTTP/1.1" 200 6157

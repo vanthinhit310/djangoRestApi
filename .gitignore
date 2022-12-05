@@ -54,3 +54,6 @@ manage.py
 
 # example database
 drf_example
+
+# log folder
+logs
