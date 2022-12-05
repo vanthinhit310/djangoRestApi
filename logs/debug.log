@@ -1,0 +1,6 @@
+INFO 2022-12-05 14:06:59,247 basehttp "GET /api/tutorials HTTP/1.1" 200 5665
+INFO 2022-12-05 14:07:01,012 basehttp "GET /api/tutorials HTTP/1.1" 200 5665
+INFO 2022-12-05 14:07:02,622 basehttp "POST /api/tutorials HTTP/1.1" 201 207
+INFO 2022-12-05 14:07:03,382 basehttp "POST /api/tutorials HTTP/1.1" 201 207
+INFO 2022-12-05 14:07:04,036 basehttp "POST /api/tutorials HTTP/1.1" 201 207
+INFO 2022-12-05 14:07:05,623 basehttp "GET /api/tutorials HTTP/1.1" 200 6157
