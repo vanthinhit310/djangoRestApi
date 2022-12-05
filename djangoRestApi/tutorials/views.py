@@ -30,7 +30,10 @@ class TutorialView(APIView):
             read_serializer = TutorialSerializer(queryset, many=True)
 
             # Return a HTTP response object with the list of tutorial items as JSON
-            return Response(read_serializer.data)
+            return Response(
+                {"success": True, "message": "success", "data": read_serializer.data},
+                status=200,
+            )
 
     def post(self, request):
         # Pass JSON data from user POST request to serializer for validation
@@ -46,7 +49,10 @@ class TutorialView(APIView):
             read_serializer = TutorialSerializer(tutorial_item_object)
 
             # Return a HTTP response with the newly created tutorial item data
-            return Response(read_serializer.data, status=201)
+            return Response(
+                {"success": True, "message": "success", "data": read_serializer.data},
+                status=201,
+            )
 
         # If the users POST data is not valid, return a 400 response with an error message
         return Response(create_serializer.errors, status=400)
