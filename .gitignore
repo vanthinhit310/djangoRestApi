@@ -45,7 +45,7 @@ coverage.xml
 
 # VirtualEnv
 .venv/
-.venv38/
+venv38
 
 # Developers
 *.sw*
