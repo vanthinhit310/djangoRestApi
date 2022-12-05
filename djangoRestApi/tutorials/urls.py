@@ -1,6 +1,6 @@
 from django.urls import path
-from tutorials import views
+from tutorials.views import TutorialView
 
 urlpatterns = [
-    path("api/tutorials", views.index, name="index"),
+    path("api/tutorials", TutorialView.as_view()),
 ]
