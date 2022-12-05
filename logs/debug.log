@@ -4,3 +4,58 @@ INFO 2022-12-05 14:07:02,622 basehttp "POST /api/tutorials HTTP/1.1" 201 207
 INFO 2022-12-05 14:07:03,382 basehttp "POST /api/tutorials HTTP/1.1" 201 207
 INFO 2022-12-05 14:07:04,036 basehttp "POST /api/tutorials HTTP/1.1" 201 207
 INFO 2022-12-05 14:07:05,623 basehttp "GET /api/tutorials HTTP/1.1" 200 6157
+INFO 2022-12-05 14:12:34,510 autoreload Watching for file changes with StatReloader
+INFO 2022-12-05 14:12:56,479 autoreload Watching for file changes with StatReloader
+ERROR 2022-12-05 14:14:30,394 log Internal Server Error: /api/tutorials
+Traceback (most recent call last):
+  File "c:\Users\vanth\Desktop\djangoRestApi\venv38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\vanth\Desktop\djangoRestApi\venv38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\Users\vanth\Desktop\djangoRestApi\venv38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\Users\vanth\Desktop\djangoRestApi\venv38\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\Users\vanth\Desktop\djangoRestApi\venv38\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\Users\vanth\Desktop\djangoRestApi\venv38\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "c:\Users\vanth\Desktop\djangoRestApi\venv38\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "c:\Users\vanth\Desktop\djangoRestApi\venv38\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vanth\Desktop\djangoRestApi\djangoRestApi\tutorials\views.py", line 37, in get
+    {"success": True, "message": "success", "data": read_serializer.data},
+  File "c:\Users\vanth\Desktop\djangoRestApi\venv38\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "c:\Users\vanth\Desktop\djangoRestApi\venv38\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "c:\Users\vanth\Desktop\djangoRestApi\venv38\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "c:\Users\vanth\Desktop\djangoRestApi\venv38\lib\site-packages\django\db\models\query.py", line 394, in __iter__
+    self._fetch_all()
+  File "c:\Users\vanth\Desktop\djangoRestApi\venv38\lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "c:\Users\vanth\Desktop\djangoRestApi\venv38\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "c:\Users\vanth\Desktop\djangoRestApi\venv38\lib\site-packages\django\db\models\sql\compiler.py", line 1385, in execute_sql
+    sql, params = self.as_sql()
+  File "c:\Users\vanth\Desktop\djangoRestApi\venv38\lib\site-packages\django\db\models\sql\compiler.py", line 593, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup()
+  File "c:\Users\vanth\Desktop\djangoRestApi\venv38\lib\site-packages\django\db\models\sql\compiler.py", line 71, in pre_sql_setup
+    self.setup_query()
+  File "c:\Users\vanth\Desktop\djangoRestApi\venv38\lib\site-packages\django\db\models\sql\compiler.py", line 62, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select()
+  File "c:\Users\vanth\Desktop\djangoRestApi\venv38\lib\site-packages\django\db\models\sql\compiler.py", line 257, in get_select
+    cols = self.get_default_columns()
+  File "c:\Users\vanth\Desktop\djangoRestApi\venv38\lib\site-packages\django\db\models\sql\compiler.py", line 819, in get_default_columns
+    start_alias = start_alias or self.query.get_initial_alias()
+  File "c:\Users\vanth\Desktop\djangoRestApi\venv38\lib\site-packages\django\db\models\sql\query.py", line 1011, in get_initial_alias
+    self.ref_alias(alias)
+  File "c:\Users\vanth\Desktop\djangoRestApi\venv38\lib\site-packages\django\db\models\sql\query.py", line 833, in ref_alias
+    self.alias_refcount[alias] += 1
+KeyError: None
+ERROR 2022-12-05 14:14:30,409 basehttp "GET /api/tutorials HTTP/1.1" 500 162963
+INFO 2022-12-05 14:14:52,883 basehttp "GET /api/tutorials HTTP/1.1" 200 6157
+INFO 2022-12-05 14:14:56,375 basehttp "GET /api/tutorials HTTP/1.1" 200 6157
+INFO 2022-12-05 14:14:57,533 basehttp "GET /api/tutorials HTTP/1.1" 200 6157

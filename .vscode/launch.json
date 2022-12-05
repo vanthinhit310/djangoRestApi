@@ -11,13 +11,7 @@
       "program": "${workspaceFolder}\\djangoRestApi\\manage.py",
       "django": true,
       "justMyCode": true,
-      "args": ["runserver", "--no-color", "--noreload"],
-      "debugOptions": [
-        "WaitOnAbnormalExit",
-        "WaitOnNormalExit",
-        "RedirectOutput",
-        "DjangoDebugging"
-      ]
+      "args": ["runserver"]
     }
   ]
 }
