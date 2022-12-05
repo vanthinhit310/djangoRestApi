@@ -8,8 +8,9 @@ from tutorials.serializers import TutorialSerializer
 from rest_framework.decorators import api_view
 
 # Create your views here.
-
-
 @api_view(["GET"])
 def index(request):
-    return JsonResponse("Hello world", status=status.HTTP_200_OK)
+    return JsonResponse(
+        {"success": True, "message": "success", "data": {"a": 10.56, "b": "Thinh"}},
+        safe=False,
+    )
