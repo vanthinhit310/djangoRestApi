@@ -41,6 +41,7 @@ class TutorialView(APIView):
     def post(self, request):
         # Pass JSON data from user POST request to serializer for validation
         create_serializer = TutorialSerializer(data=request.data)
+        
 
         # Check if user POST data passes validation checks from serializer
         if create_serializer.is_valid():
